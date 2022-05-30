@@ -41,6 +41,7 @@ print("[INFO] starting video stream...")
 cam = cv2.VideoCapture(0)
 time.sleep(2.0)
 
+#clearing the data present in csv
 if os.stat("result.csv").st_size != 0:
         f = open('result.csv', 'r+')
         f.truncate(0)
